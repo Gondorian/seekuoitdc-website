@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>css demo</title>
+<style>
+p {
+color: blue;
+width: 200px;
+font-size: 14px;
+margin-top: 0px;
+}
+
+p .p-text {
+margin-top: 20px;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<p>
+Just roll the mouse over me.</p>
+<p><div class="p-text">Or me to see a color change.</div></p>
+<script>
+$( ".p-text" ).on( "mouseover", function() {
+$( this ).css( "margin-top", "100px" );
+});
+</script>
+</body>
+</html>
